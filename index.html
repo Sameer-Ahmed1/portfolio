@@ -56,7 +56,12 @@
     <h1>Welcome to my website</h1>
     <p>Development in progress. Visit tomorrow to see the full site. Thanks for your patience!</p>
     <p class="technologies">As a full stack web developer, I work with: React, Express, Node.js, MongoDB, MySQL.</p>
-    <a href="#" class="btn">Visit Tomorrow</a>
+    <a onclick="handleClick" class="btn">Visit Tomorrow</a>
   </div>
+  <script>
+    function handleClick (){
+        location.reload();
+    }
+  </script>
 </body>
 </html>
