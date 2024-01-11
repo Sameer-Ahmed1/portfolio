@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200 flex flex-col min-h-screen ">
+  <nav class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white shadow-md p-4 mb-0 flex flex-col md:flex-row">
+    <div class="w-full">
+      <div class="flex justify-between items-center w-full md:w-auto">
+        <a href="/" class="text-2xl font-bold text-white hover:text-gray-300">Sameer Ahmed</a>
+        <div class="md:hidden">
+          <button id="hamburger">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden hidden md:flex w-full items-end" id="menu">
+      <ul class="text-lg text-left space-y-4   underline text-white pl-4 mt-4">
+        <li><a href="/" class="hover:text-gray-300">Home</a></li>
+        <li><a href="/projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="/blogs" class="hover:text-gray-300">Blogs</a></li>
+      </ul>
+    </div>
+    <div class="hidden md:block w-full items-end  " >
+      <ul class="text-lg flex flex-row space-x-4  justify-end   text-white pr-4 ">
+        <li><a href="/" class="hover:text-gray-300">Home</a></li>
+        <li><a href="/projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="/blogs" class="hover:text-gray-300">Blogs</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="text-center flex flex-col justify-center items-center p-10 mt-0 bg-gray-800 text-white flex-grow">
+  </section>
+  <footer class="text-center p-4 mt-0 bg-black text-white">
+    <p>&copy; 2024 M Sameer Ahmed. All rights reserved.</p>
+  </footer>
+  </div>
+  </div>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('menu').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
